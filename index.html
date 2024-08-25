@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./src/logo.png" class="logo__header" alt="">
+    </header>
+
+    <div class="main__content">
+
+    <section class="input__section">
+
+        <h1>Encriptador de texto</h1>
+        <textarea class="encryptor" type="text" rows="30" id="encryptorTextarea" placeholder="Ingresa el texto a cifrar"></textarea>
+        <div class="input__section__information">
+            <p>Solo letras minusculas, sin caracteres especiales</p>
+        </div>
+        <div class="input__section__button">
+            <button onclick="encryptFunction()">Encriptar</button>
+            <button onclick="desencryptFunction()">Desencriptar</button>
+        </div>
+    </section>
+    <section class="output__section">
+        <h1>Mensaje Desencriptado</h1>
+        <h2 id="desencriptado text-to-copy"></h2>
+    </section>
+</div>
+<footer>
+    <h1>Contactame!</h1>
+    <div>
+        <img src="./src/instagram.png" class="footer__icons" alt="">
+        <img src="./src/github.png" class="footer__icons" alt="">
+    </div>
+</footer>
+</body>
+<script src="./script.js" defer></script>
+
+</html>
